@@ -1,0 +1,1019 @@
+2020-04-09 13:31:46 INFO  main com.ccc.eirc.EircApplication Starting EircApplication on DESKTOP-C7SKRPK with PID 15948 (D:\Develop-Tools\IDEA\IDEA-workspace\eirc\target\classes started by ccc in D:\Develop-Tools\IDEA\IDEA-workspace\eirc)
+2020-04-09 13:31:46 INFO  main com.ccc.eirc.EircApplication The following profiles are active: develop
+2020-04-09 13:31:46 INFO  main org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-09 13:31:46 INFO  main org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-09 13:31:50 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-09 13:31:50 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-09 13:31:51 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 200ms. Found 0 Redis repository interfaces.
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$9159d977] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'eircProperties' of type [com.ccc.eirc.commons.properties.EircProperties$$EnhancerBySpringCGLIB$$e97d6927] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [com.ccc.eirc.commons.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$b971f2f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'mybatisPlusConfigure' of type [com.ccc.eirc.commons.configuration.MybatisPlusConfigure$$EnhancerBySpringCGLIB$$32c61e23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$6593d540] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:52 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource detect P6SPY plugin and enabled it
+2020-04-09 13:31:52 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-04-09 13:31:54 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-04-09 13:31:54 INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2020-04-09 13:31:54 INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2020-04-09 13:31:54 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2020-04-09 13:31:54 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-04-09 13:31:54 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2020-04-09 13:31:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:54 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userMapper' of type [com.sun.proxy.$Proxy115] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy117] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userRoleServiceImpl' of type [com.ccc.eirc.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userServiceImpl' of type [com.ccc.eirc.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMapper' of type [com.sun.proxy.$Proxy119] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy121] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMenuServiceImpl' of type [com.ccc.eirc.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleServiceImpl' of type [com.ccc.eirc.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'menuMapper' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'menuServiceImpl' of type [com.ccc.eirc.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [com.ccc.eirc.commons.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:55 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 13:31:57 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2020-04-09 13:31:57 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-09 13:31:57 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-04-09 13:31:57 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-09 13:31:57 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2020-04-09 13:31:57 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 10864 ms
+2020-04-09 13:32:00 INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-09 13:32:01 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-09 13:32:01 INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2020-04-09 13:32:01 INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-04-09 13:32:01 INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2020-04-09 13:32:01 INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2020-04-09 13:32:01 INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2020-04-09 13:32:01 INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'Eirc_Scheduler' with instanceId 'DESKTOP-C7SKRPK1586410321306'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2020-04-09 13:32:01 INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'Eirc_Scheduler' initialized from an externally provided properties instance.
+2020-04-09 13:32:01 INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2020-04-09 13:32:01 INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6864a0a1
+2020-04-09 13:32:01 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 13:32:02 INFO  main org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2020-04-09 13:32:02 INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2020-04-09 13:32:03 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2020-04-09 13:32:03 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2020-04-09 13:32:03 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2020-04-09 13:32:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getDeptTreeUsingGET_1
+2020-04-09 13:32:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_1
+2020-04-09 13:32:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_2
+2020-04-09 13:32:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_3
+2020-04-09 13:32:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_4
+2020-04-09 13:32:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_5
+2020-04-09 13:32:03 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_6
+2020-04-09 13:32:04 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: handleUsingGET_1
+2020-04-09 13:32:04 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: handleUsingGET_2
+2020-04-09 13:32:04 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_7
+2020-04-09 13:32:04 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_8
+2020-04-09 13:32:04 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_9
+2020-04-09 13:32:04 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: httptraceUsingGET_1
+2020-04-09 13:32:04 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: parkAvailableUsingGET_1
+2020-04-09 13:32:04 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: logUsingGET_1
+2020-04-09 13:32:04 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: onlineUsingGET_1
+2020-04-09 13:32:04 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: indexUsingGET_1
+2020-04-09 13:32:04 INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [Eirc_Scheduler] in 1 seconds
+2020-04-09 13:32:04 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2020-04-09 13:32:04 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 13:32:04 INFO  main com.ccc.eirc.EircApplication Started EircApplication in 20.197 seconds (JVM running for 27.677)
+2020-04-09 13:32:04 INFO  main io.lettuce.core.EpollProvider Starting without optional epoll library
+2020-04-09 13:32:04 INFO  main io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2020-04-09 13:32:05 INFO  Quartz Scheduler [Eirc_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2020-04-09 13:32:05 INFO  Quartz Scheduler [Eirc_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2020-04-09 13:32:05 INFO  Quartz Scheduler [Eirc_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "f03ce12e8d211586324162052"'s failed in-progress jobs.
+2020-04-09 13:32:05 INFO  Quartz Scheduler [Eirc_Scheduler] org.quartz.core.QuartzScheduler Scheduler Eirc_Scheduler_$_DESKTOP-C7SKRPK1586410321306 started.
+2020-04-09 13:32:05 INFO  main com.ccc.eirc.commons.runner.EircStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2020-04-09 13:32:05 INFO  main com.ccc.eirc.commons.runner.EircStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2020-04-09 13:32:05 INFO  main com.ccc.eirc.commons.runner.EircStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2020-04-09 13:32:05 INFO  main com.ccc.eirc.commons.runner.EircStartedUpRunner                                                       
+2020-04-09 13:32:05 INFO  main com.ccc.eirc.commons.runner.EircStartedUpRunner EIRC 停车系统启动完毕，地址：http://192.168.80.1:8080/login
+2020-04-09 13:32:05 INFO  RMI TCP Connection(3)-192.168.80.1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 13:32:05 INFO  RMI TCP Connection(3)-192.168.80.1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2020-04-09 13:32:05 INFO  RMI TCP Connection(3)-192.168.80.1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 24 ms
+2020-04-09 13:32:08 INFO  http-nio-8080-exec-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2020-04-09 13:32:14 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:32:14 | 耗时 38 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:32:15 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:32:15 | 耗时 8 ms | SQL 语句：
+INSERT INTO t_login_log (`SYSTEM`, LOGIN_TIME, BROWSER, IP, LOCATION, USERNAME) VALUES ('Windows 10', '2020-04-09T13:32:14.949+0800', 'Chrome 81', '192.168.80.1', '内网IP|0|0|内网IP|内网IP', 'ccc');
+2020-04-09 13:32:15 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:32:15 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:32:15 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:32:15 | 耗时 22 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:32:15 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:32:15 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:32:16 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:32:16 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:32:16 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:32:16 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-04-09T13:32:16.293+0800' WHERE (USERNAME = 'ccc');
+2020-04-09 13:32:16 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:32:16 | 耗时 20 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-04-09 13:32:16 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:32:16 | 耗时 1 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-04-09 13:32:16 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:32:16 | 耗时 1 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-04-09 13:32:16 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:32:16 | 耗时 12 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-04-09 13:32:16 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:32:16 | 耗时 1 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'ccc' GROUP BY days;
+2020-04-09 13:32:33 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:32:33 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:32:33 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:32:33 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:32:33 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:32:33 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:32:33 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:32:33 | 耗时 16 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 13:32:33 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:32:33 | 耗时 2 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:32:35 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:32:35 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:32:35 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:32:35 | 耗时 16 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:32:35 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:32:35 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:32:38 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:32:38 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:32:38 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:32:38 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:32:41 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:32:41 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '大师啊';
+2020-04-09 13:32:43 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:32:43 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '大师啊' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:32:43 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:32:43 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:32:43 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:32:43 | 耗时 2 ms | SQL 语句：
+UPDATE t_park SET OWNER = 1, MOBILE = '15623041759', AVAILABLE = '1', WHY = 'adsad导师', DESCRIPTION = '123', MODIFYTIME = '2020-04-09T13:32:43.974+0800', PRICE = 4.0, PLACE = '黄冈', SPAN = '123', USERNAME = '大师啊' WHERE ID = 27;
+2020-04-09 13:32:44 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:32:44 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:32:44 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:32:44 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:32:45 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:32:45 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:32:45 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:32:45 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:32:45 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:32:45 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:32:47 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:32:47 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:32:47 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:32:47 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:32:47 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:32:47 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:32:48 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:32:48 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:32:48 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:32:48 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:32:48 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:32:48 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:32:48 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:32:48 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:33:28 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:33:28 | 耗时 2 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:33:28 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:33:28 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:33:28 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:33:28 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:33:29 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:33:29 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:33:29 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:33:29 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:33:29 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:33:29 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:33:29 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:33:29 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:33:33 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:33:33 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:33:33 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:33:33 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 13:33:33 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:33:33 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:33:40 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:33:40 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 13:33:46 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:33:46 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:33:46 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:33:46 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:33:48 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:33:48 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = 'aaaa';
+2020-04-09 13:33:51 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:33:51 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'aaaa' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:33:51 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:33:51 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:33:51 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:33:51 | 耗时 1 ms | SQL 语句：
+UPDATE t_park SET OWNER = 1, MOBILE = '15623041759', AVAILABLE = '1', WHY = '', DESCRIPTION = '15615都是', MODIFYTIME = '2020-04-09T13:33:51.381+0800', PRICE = 4.0, PLACE = '荆州', SPAN = '45615', USERNAME = 'aaaa' WHERE ID = 26;
+2020-04-09 13:33:51 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:33:51 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:33:51 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:33:51 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:33:53 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:33:53 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:33:53 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:33:53 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 13:33:53 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:33:53 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:34:21 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:34:21 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:34:21 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:34:21 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:34:24 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:34:24 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '舒马赫';
+2020-04-09 13:34:26 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:34:26 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '舒马赫' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:34:26 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:34:26 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:34:26 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:34:26 | 耗时 1 ms | SQL 语句：
+UPDATE t_park SET OWNER = 1, MOBILE = '15623041759', AVAILABLE = '1', WHY = '', DESCRIPTION = 'LALALALA', MODIFYTIME = '2020-04-09T13:34:26.567+0800', PRICE = 4.0, PLACE = '巴音布鲁克', SPAN = 'AE 87', USERNAME = '舒马赫' WHERE ID = 25;
+2020-04-09 13:34:26 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:34:26 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:34:26 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:34:26 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:40:22 INFO  http-nio-8080-exec-10 org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-09 13:40:22 INFO  http-nio-8080-exec-10 org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 84ms. Found 0 Redis repository interfaces.
+2020-04-09 13:40:23 INFO  http-nio-8080-exec-10 org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-09 13:40:23 INFO  http-nio-8080-exec-10 org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-09 13:40:23 INFO  http-nio-8080-exec-10 org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 215ms. Found 0 Redis repository interfaces.
+2020-04-09 13:40:24 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:40:24 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:40:24 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:40:24 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:40:24 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:40:24 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:40:25 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:40:25 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:40:25 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:40:25 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:40:25 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:40:25 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:40:26 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:40:26 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:40:26 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:40:26 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:40:26 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:40:26 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:40:26 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:40:26 | 耗时 5 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:40:27 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:40:27 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:40:27 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:40:27 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:40:48 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:40:48 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = 'aaaa';
+2020-04-09 13:40:50 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:40:50 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'aaaa' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:40:50 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:40:50 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:40:50 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:40:50 | 耗时 1 ms | SQL 语句：
+UPDATE t_park SET OWNER = 0, MOBILE = '15623041759', AVAILABLE = '1', WHY = '', DESCRIPTION = '15615都是', MODIFYTIME = '2020-04-09T13:40:50.112+0800', PRICE = 4.0, PLACE = '荆州', SPAN = '45615', USERNAME = 'aaaa' WHERE ID = 26;
+2020-04-09 13:40:50 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:40:50 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:40:50 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:40:50 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:43:08 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:43:08 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:43:08 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:43:08 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:43:08 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:43:08 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:43:08 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:43:08 | 耗时 4 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:43:08 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:43:08 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:43:08 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:43:08 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:43:11 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:43:11 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:43:11 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:43:11 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:43:11 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:43:11 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:43:12 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:43:12 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:43:12 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:43:12 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:43:12 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:43:12 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:43:29 INFO  http-nio-8080-exec-10 org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-09 13:43:29 INFO  http-nio-8080-exec-10 org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 83ms. Found 0 Redis repository interfaces.
+2020-04-09 13:43:29 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:43:29 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原拓海';
+2020-04-09 13:43:32 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:43:32 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '藤原拓海' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:43:32 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:43:32 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:43:32 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:43:32 | 耗时 3 ms | SQL 语句：
+UPDATE t_park SET OWNER = 10, MOBILE = '15623041759', AVAILABLE = '1', WHY = '我才是车神', DESCRIPTION = '111111', MODIFYTIME = '2020-04-09T13:43:32.572+0800', PRICE = 4.0, PLACE = '秋名山', SPAN = 'AE 86', USERNAME = '藤原拓海' WHERE ID = 22;
+2020-04-09 13:43:32 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:43:32 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:43:32 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:43:32 | 耗时 2 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:43:53 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:43:53 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原拓海';
+2020-04-09 13:43:55 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:43:55 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '藤原拓海' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:43:58 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:43:58 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '藤原拓海' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:44:05 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:44:05 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原拓海';
+2020-04-09 13:44:07 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:44:07 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '藤原拓海' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:44:15 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:44:15 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '范甘迪';
+2020-04-09 13:44:21 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:44:21 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = 'chencheng';
+2020-04-09 13:44:37 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:44:37 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '范甘迪';
+2020-04-09 13:44:58 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:44:58 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:44:58 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:44:58 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:44:58 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:44:58 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:44:59 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:44:59 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:44:59 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:44:59 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:44:59 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:44:59 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:45:01 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:45:01 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = 'aaaa';
+2020-04-09 13:45:07 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:45:07 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'aaaa' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:45:07 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:45:07 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:45:07 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:45:07 | 耗时 1 ms | SQL 语句：
+UPDATE t_park SET OWNER = 10, MOBILE = '15623041759', AVAILABLE = '1', WHY = '', DESCRIPTION = '15615都是', MODIFYTIME = '2020-04-09T13:45:07.045+0800', PRICE = 4.0, PLACE = '荆州', SPAN = '45615', USERNAME = 'aaaa' WHERE ID = 26;
+2020-04-09 13:45:07 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:45:07 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:45:07 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:45:07 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:46:34 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:46:34 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:46:34 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:46:34 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:46:34 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:46:34 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:46:35 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:46:35 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:46:35 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:46:35 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:46:35 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:46:35 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:46:37 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:46:37 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:46:37 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:46:37 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:46:37 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:46:37 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:46:37 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:46:37 | 耗时 2 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:46:37 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:46:37 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:46:37 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:46:37 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:46:49 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:46:49 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 13:46:55 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:46:55 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 13:46:58 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:46:58 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 13:47:00 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:47:00 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '我的私人车位' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:47:00 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:47:00 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:47:00 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:47:00 | 耗时 1 ms | SQL 语句：
+UPDATE t_park SET OWNER = 1, MOBILE = '15623041759', AVAILABLE = '0', WHY = '', DESCRIPTION = '测试数据', MODIFYTIME = '2020-04-09T13:47:00.722+0800', PRICE = 4.0, PLACE = '秋名山', SPAN = '8686', USERNAME = '我的私人车位' WHERE ID = 31;
+2020-04-09 13:47:00 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:47:00 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:47:00 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:47:00 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:47:04 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:47:04 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 13:47:05 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:47:05 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '我的私人车位' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:47:45 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:47:45 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:47:45 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:47:45 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:47:45 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:47:45 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:47:45 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:47:45 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:47:46 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:47:46 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:47:46 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:47:46 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:47:46 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:47:46 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 13:47:47 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:47:47 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '我的私人车位' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:47:52 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:47:52 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 13:48:15 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:48:15 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:48:15 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:48:15 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:48:16 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:48:16 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:48:16 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:48:16 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:48:16 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:48:16 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:48:16 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:48:16 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:48:18 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:48:18 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:48:18 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:48:18 | 耗时 4 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 13:48:18 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:48:18 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:48:19 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:48:19 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原豆腐店';
+2020-04-09 13:48:36 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:48:36 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '藤原豆腐店' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:48:36 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:48:36 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:48:36 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:48:36 | 耗时 2 ms | SQL 语句：
+UPDATE t_park SET OWNER = 1, MOBILE = '15623041759', WHY = '可以', DESCRIPTION = '111111', MODIFYTIME = '2020-04-09T13:48:36.900+0800', PRICE = 4.0, PLACE = '武汉', SPAN = '1111', USERNAME = '藤原豆腐店' WHERE ID = 29;
+2020-04-09 13:48:36 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:48:36 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:48:36 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:48:36 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 13:48:36 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:48:36 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:48:43 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:48:43 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原豆腐店';
+2020-04-09 13:49:04 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:49:04 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:49:04 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:49:04 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:49:08 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:49:08 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 13:49:08 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:49:08 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:49:27 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:49:27 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:49:27 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:49:27 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:49:27 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:49:27 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:49:31 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:49:31 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 13:49:31 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:49:31 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:49:35 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:49:35 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:49:35 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:49:35 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (ID = 29);
+2020-04-09 13:49:36 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:49:36 | 耗时 47 ms | SQL 语句：
+INSERT INTO t_order (MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME) VALUES ('2020-04-09T13:48:37.000+0800', '2020-04-09T13:49:35.986+0800', 4.0, '15623041759', '武汉', 1, 29, '藤原豆腐店');
+2020-04-09 13:49:37 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:49:37 | 耗时 4 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:49:37 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:49:37 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:49:37 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:49:37 | 耗时 0 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:51:37 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:51:37 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:51:37 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:51:37 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:51:37 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:51:37 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:51:38 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:51:38 | 耗时 2 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:51:38 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:51:38 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:51:38 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:51:38 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:51:38 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:51:38 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:51:40 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:51:40 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 13:51:40 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:51:40 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:51:43 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:51:43 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原豆腐店';
+2020-04-09 13:52:07 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:52:07 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:52:07 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:52:07 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (ID = 7);
+2020-04-09 13:52:34 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:52:34 | 耗时 3 ms | SQL 语句：
+INSERT INTO t_order (MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME) VALUES ('2020-04-03T21:25:18.000+0800', '2020-04-09T13:52:34.242+0800', 4.0, '15623041759', '武汉市', 1, 7, 'aaaaaa');
+2020-04-09 13:52:37 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:52:37 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:52:37 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:52:37 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:52:37 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:52:37 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:52:39 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:52:39 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:52:39 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:52:39 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:52:39 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:52:39 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:52:39 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:52:39 | 耗时 3 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:52:39 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:52:39 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:52:39 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:52:39 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:52:39 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:52:39 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:54:09 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:54:09 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 13:54:09 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:54:09 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:54:15 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:54:15 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:54:15 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:54:15 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (ID = 26);
+2020-04-09 13:54:15 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:54:15 | 耗时 2 ms | SQL 语句：
+INSERT INTO t_order (MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME) VALUES ('2020-04-09T13:45:07.000+0800', '2020-04-09T13:54:15.812+0800', 4.0, '15623041759', '荆州', 1, 26, 'aaaa');
+2020-04-09 13:54:15 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:54:15 | 耗时 1 ms | SQL 语句：
+UPDATE t_park SET OWNER = 10, MOBILE = '15623041759', AVAILABLE = '1', WHY = '', DESCRIPTION = '15615都是', MODIFYTIME = '2020-04-09T13:54:15.820+0800', CREATETIME = '2020-04-03T18:23:20.000+0800', REVIEW = '1', PRICE = 4.0, PLACE = '荆州', SPAN = '45615', STATUS = '0', USERNAME = 'aaaa' WHERE ID = 26;
+2020-04-09 13:54:15 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:54:15 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 13:54:15 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:54:15 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:54:25 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:54:25 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:54:25 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:54:25 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:54:25 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:54:25 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:54:27 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:54:27 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原拓海啊';
+2020-04-09 13:54:29 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:54:29 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = 'aaaa';
+2020-04-09 13:54:37 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:54:37 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:54:37 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:54:37 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USERNAME LIKE '%a%' AND USER_ID = 1);
+2020-04-09 13:54:37 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 13:54:37 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USERNAME LIKE '%a%' AND USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:54:45 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:54:45 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:54:45 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:54:45 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (MOBILE LIKE '%2304%' AND USER_ID = 1);
+2020-04-09 13:54:45 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:54:45 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (MOBILE LIKE '%2304%' AND USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:54:58 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:54:58 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:54:58 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:54:58 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (MOBILE LIKE '%海%' AND USER_ID = 1);
+2020-04-09 13:54:58 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:54:58 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:54:58 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:54:58 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (MOBILE LIKE '%海%' AND USER_ID = 1);
+2020-04-09 13:55:02 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:55:02 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:55:02 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:55:02 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:55:02 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:55:02 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:55:05 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:55:05 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:55:05 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:55:05 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USERNAME LIKE '%海%' AND USER_ID = 1);
+2020-04-09 13:55:05 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:55:05 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USERNAME LIKE '%海%' AND USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:55:11 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:55:11 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:55:11 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:55:11 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:55:11 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:55:11 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:55:11 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:55:11 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:55:12 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:55:12 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 13:55:12 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 13:55:12 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:55:14 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:55:14 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:55:14 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:55:14 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 13:55:14 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 13:55:14 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:55:19 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:55:19 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 13:55:19 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 13:55:19 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:55:34 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:55:34 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 13:55:34 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 13:55:34 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:55:39 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:55:39 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = 'ssssss';
+2020-04-09 13:55:40 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:55:40 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '大师啊';
+2020-04-09 13:59:29 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:59:29 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 13:59:29 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:59:29 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 13:59:29 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:59:29 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:59:30 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:59:30 | 耗时 13 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 13:59:30 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:59:30 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 13:59:30 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 13:59:30 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 13:59:31 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 13:59:31 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原豆腐店';
+2020-04-09 13:59:33 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 13:59:33 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '藤原豆腐店' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 13:59:39 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 13:59:39 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '大师啊';
+2020-04-09 13:59:43 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 13:59:43 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '舒马赫';
+2020-04-09 14:00:04 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 14:00:04 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (USERNAME LIKE '%藤原%' AND STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 14:00:04 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 14:00:04 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (USERNAME LIKE '%藤原%' AND STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:00:59 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:00:59 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原豆腐店';
+2020-04-09 14:01:02 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 14:01:02 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原拓海';
+2020-04-09 14:01:42 INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler Eirc_Scheduler_$_DESKTOP-C7SKRPK1586410321306 paused.
+2020-04-09 14:01:42 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 14:01:42 INFO  SpringContextShutdownHook org.springframework.scheduling.quartz.SchedulerFactoryBean Shutting down Quartz Scheduler
+2020-04-09 14:01:42 INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler Eirc_Scheduler_$_DESKTOP-C7SKRPK1586410321306 shutting down.
+2020-04-09 14:01:42 INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler Eirc_Scheduler_$_DESKTOP-C7SKRPK1586410321306 paused.
+2020-04-09 14:01:42 INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler Eirc_Scheduler_$_DESKTOP-C7SKRPK1586410321306 shutdown complete.
+2020-04-09 14:01:43 INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-04-09 14:01:43 INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown initiated...
+2020-04-09 14:01:43 INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown completed.
+2020-04-09 14:01:43 INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-04-09 14:01:43 INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-04-09 14:01:43 INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye
+2020-04-09 14:06:58 INFO  main com.ccc.eirc.EircApplication Starting EircApplication on DESKTOP-C7SKRPK with PID 3468 (D:\Develop-Tools\IDEA\IDEA-workspace\eirc\target\classes started by ccc in D:\Develop-Tools\IDEA\IDEA-workspace\eirc)
+2020-04-09 14:06:58 INFO  main com.ccc.eirc.EircApplication The following profiles are active: develop
+2020-04-09 14:06:58 INFO  main org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-09 14:06:58 INFO  main org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-09 14:07:01 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-09 14:07:01 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-09 14:07:01 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 174ms. Found 0 Redis repository interfaces.
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$20c7ed61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'eircProperties' of type [com.ccc.eirc.commons.properties.EircProperties$$EnhancerBySpringCGLIB$$78eb7d11] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroConfig' of type [com.ccc.eirc.commons.authentication.ShiroConfig$$EnhancerBySpringCGLIB$$9b053319] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'mybatisPlusConfigure' of type [com.ccc.eirc.commons.configuration.MybatisPlusConfigure$$EnhancerBySpringCGLIB$$c234320d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'paginationInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$f501e92a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDataSourceCreator' of type [com.baomidou.dynamic.datasource.DynamicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dynamicDataSourceProvider' of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:02 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource detect P6SPY plugin and enabled it
+2020-04-09 14:07:02 INFO  main com.zaxxer.hikari.HikariDataSource base - Starting...
+2020-04-09 14:07:03 INFO  main com.zaxxer.hikari.HikariDataSource base - Start completed.
+2020-04-09 14:07:03 INFO  main com.zaxxer.hikari.HikariDataSource quartz - Starting...
+2020-04-09 14:07:03 INFO  main com.zaxxer.hikari.HikariDataSource quartz - Start completed.
+2020-04-09 14:07:03 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [quartz] success
+2020-04-09 14:07:03 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource - load a datasource named [base] success
+2020-04-09 14:07:03 INFO  main com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource initial loaded [2] datasource,primary datasource named [base]
+2020-04-09 14:07:03 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'dataSource' of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:03 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:03 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userMapper' of type [com.sun.proxy.$Proxy115] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy117] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userRoleServiceImpl' of type [com.ccc.eirc.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'userServiceImpl' of type [com.ccc.eirc.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMapper' of type [com.sun.proxy.$Proxy119] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy121] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleMenuServiceImpl' of type [com.ccc.eirc.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'roleServiceImpl' of type [com.ccc.eirc.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'menuMapper' of type [com.sun.proxy.$Proxy123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'menuServiceImpl' of type [com.ccc.eirc.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'shiroRealm' of type [com.ccc.eirc.commons.authentication.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:04 INFO  main org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-09 14:07:05 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2020-04-09 14:07:05 INFO  main org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+2020-04-09 14:07:05 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2020-04-09 14:07:05 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-09 14:07:05 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2020-04-09 14:07:05 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 7136 ms
+2020-04-09 14:07:08 INFO  main org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-09 14:07:08 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-09 14:07:08 INFO  main org.quartz.impl.StdSchedulerFactory Using default implementation for ThreadExecutor
+2020-04-09 14:07:08 INFO  main org.quartz.core.SchedulerSignalerImpl Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-04-09 14:07:08 INFO  main org.quartz.core.QuartzScheduler Quartz Scheduler v.2.3.2 created.
+2020-04-09 14:07:08 INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore Using db table-based data access locking (synchronization).
+2020-04-09 14:07:08 INFO  main org.springframework.scheduling.quartz.LocalDataSourceJobStore JobStoreCMT initialized.
+2020-04-09 14:07:08 INFO  main org.quartz.core.QuartzScheduler Scheduler meta-data: Quartz Scheduler (v2.3.2) 'Eirc_Scheduler' with instanceId 'DESKTOP-C7SKRPK1586412428595'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2020-04-09 14:07:08 INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler 'Eirc_Scheduler' initialized from an externally provided properties instance.
+2020-04-09 14:07:08 INFO  main org.quartz.impl.StdSchedulerFactory Quartz scheduler version: 2.3.2
+2020-04-09 14:07:08 INFO  main org.quartz.core.QuartzScheduler JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@12cb9eda
+2020-04-09 14:07:08 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 14:07:09 INFO  main org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+2020-04-09 14:07:09 INFO  main org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Adding welcome page template: index
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getDeptTreeUsingGET_1
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_1
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_2
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_3
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_4
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_5
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_6
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: handleUsingGET_1
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: handleUsingGET_2
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_7
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_8
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: exportUsingGET_9
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: parkAvailableUsingGET_1
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: indexUsingGET_1
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: httptraceUsingGET_1
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: logUsingGET_1
+2020-04-09 14:07:10 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: onlineUsingGET_1
+2020-04-09 14:07:11 INFO  main org.springframework.scheduling.quartz.SchedulerFactoryBean Will start Quartz Scheduler [Eirc_Scheduler] in 1 seconds
+2020-04-09 14:07:11 INFO  main org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+2020-04-09 14:07:11 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-09 14:07:11 INFO  main com.ccc.eirc.EircApplication Started EircApplication in 14.167 seconds (JVM running for 18.93)
+2020-04-09 14:07:11 INFO  main io.lettuce.core.EpollProvider Starting without optional epoll library
+2020-04-09 14:07:11 INFO  main io.lettuce.core.KqueueProvider Starting without optional kqueue library
+2020-04-09 14:07:12 INFO  Quartz Scheduler [Eirc_Scheduler] org.springframework.scheduling.quartz.SchedulerFactoryBean Starting Quartz Scheduler now, after delay of 1 seconds
+2020-04-09 14:07:12 INFO  main com.ccc.eirc.commons.runner.EircStartedUpRunner  __    ___   _      ___   _     ____ _____  ____ 
+2020-04-09 14:07:12 INFO  main com.ccc.eirc.commons.runner.EircStartedUpRunner / /`  / / \ | |\/| | |_) | |   | |_   | |  | |_  
+2020-04-09 14:07:12 INFO  main com.ccc.eirc.commons.runner.EircStartedUpRunner \_\_, \_\_/ |_|  | |_|   |_|__ |_|__  |_|  |_|__ 
+2020-04-09 14:07:12 INFO  main com.ccc.eirc.commons.runner.EircStartedUpRunner                                                       
+2020-04-09 14:07:12 INFO  main com.ccc.eirc.commons.runner.EircStartedUpRunner EIRC 停车系统启动完毕，地址：http://192.168.80.1:8080/login
+2020-04-09 14:07:12 INFO  Quartz Scheduler [Eirc_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: detected 1 failed or restarted instances.
+2020-04-09 14:07:12 INFO  Quartz Scheduler [Eirc_Scheduler] org.springframework.scheduling.quartz.LocalDataSourceJobStore ClusterManager: Scanning for instance "DESKTOP-C7SKRPK1586410321306"'s failed in-progress jobs.
+2020-04-09 14:07:12 INFO  Quartz Scheduler [Eirc_Scheduler] org.quartz.core.QuartzScheduler Scheduler Eirc_Scheduler_$_DESKTOP-C7SKRPK1586412428595 started.
+2020-04-09 14:07:12 INFO  RMI TCP Connection(3)-192.168.80.1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 14:07:12 INFO  RMI TCP Connection(3)-192.168.80.1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2020-04-09 14:07:12 INFO  RMI TCP Connection(3)-192.168.80.1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 20 ms
+2020-04-09 14:07:12 INFO  http-nio-8080-exec-1 org.apache.shiro.session.mgt.AbstractValidatingSessionManager Enabling session validation scheduler...
+2020-04-09 14:07:20 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:07:20 | 耗时 5 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:07:20 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:07:20 | 耗时 2 ms | SQL 语句：
+INSERT INTO t_login_log (`SYSTEM`, LOGIN_TIME, BROWSER, IP, LOCATION, USERNAME) VALUES ('Windows 10', '2020-04-09T14:07:20.738+0800', 'Chrome 81', '192.168.80.1', '内网IP|0|0|内网IP|内网IP', 'ccc');
+2020-04-09 14:07:20 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:07:20 | 耗时 3 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 14:07:20 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:07:20 | 耗时 5 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 14:07:20 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:07:20 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:07:21 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 14:07:21 | 耗时 8 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 14:07:22 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:07:22 | 耗时 1 ms | SQL 语句：
+UPDATE t_user SET LAST_LOGIN_TIME = '2020-04-09T14:07:22.109+0800' WHERE (USERNAME = 'ccc');
+2020-04-09 14:07:22 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:07:22 | 耗时 11 ms | SQL 语句：
+SELECT count(1) FROM t_login_log;
+2020-04-09 14:07:22 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:07:22 | 耗时 1 ms | SQL 语句：
+SELECT count(1) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-04-09 14:07:22 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:07:22 | 耗时 2 ms | SQL 语句：
+SELECT count(DISTINCT (ip)) FROM t_login_log WHERE datediff(login_time, now()) = 0;
+2020-04-09 14:07:22 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:07:22 | 耗时 1 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 GROUP BY days;
+2020-04-09 14:07:22 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:07:22 | 耗时 1 ms | SQL 语句：
+SELECT date_format(l.login_time, '%m-%d') days, count(1) count FROM (SELECT * FROM t_login_log WHERE date_sub(curdate(), INTERVAL 10 day) <= date(login_time)) AS l WHERE 1 = 1 AND l.username = 'ccc' GROUP BY days;
+2020-04-09 14:07:23 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:07:23 | 耗时 2 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 14:07:23 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:07:23 | 耗时 4 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 14:07:24 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 14:07:24 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 14:07:24 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 14:07:24 | 耗时 3 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:07:28 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:07:28 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '大师啊';
+2020-04-09 14:07:49 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:07:49 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原豆腐店';
+2020-04-09 14:08:14 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 14:08:14 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 14:08:14 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 14:08:14 | 耗时 1 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 14:08:14 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 14:08:14 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:08:14 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 14:08:14 | 耗时 4 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 14:08:15 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 14:08:15 | 耗时 2 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 14:08:15 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 14:08:15 | 耗时 2 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:08:16 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 14:08:16 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原豆腐店';
+2020-04-09 14:08:23 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 14:08:23 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '藤原豆腐店' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:08:23 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 14:08:23 | 耗时 2 ms | SQL 语句：
+UPDATE t_park SET OWNER = 1, MOBILE = '15623041759', DESCRIPTION = '111111啊', MODIFYTIME = '2020-04-09T14:08:23.186+0800', PRICE = 4.0, PLACE = '武汉', SPAN = '1111', USERNAME = '藤原豆腐店' WHERE ID = 29;
+2020-04-09 14:08:23 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:08:23 | 耗时 3 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 14:08:23 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:08:23 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:08:33 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:08:33 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原豆腐店';
+2020-04-09 14:08:37 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:08:37 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 14:08:37 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:08:37 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:08:40 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 14:08:40 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 14:08:40 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 14:08:40 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:08:43 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:08:43 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:08:43 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:08:43 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (ID = 29);
+2020-04-09 14:08:43 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:08:43 | 耗时 2 ms | SQL 语句：
+INSERT INTO t_order (MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME) VALUES ('2020-04-09T14:08:23.000+0800', '2020-04-09T14:08:43.349+0800', 4.0, '15623041759', '武汉', 1, 29, '藤原豆腐店');
+2020-04-09 14:08:43 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:08:43 | 耗时 1 ms | SQL 语句：
+UPDATE t_park SET OWNER = 1, MOBILE = '15623041759', AVAILABLE = '1', WHY = '可以', DESCRIPTION = '111111啊', MODIFYTIME = '2020-04-09T14:08:43.363+0800', CREATETIME = '2020-04-03T22:05:07.000+0800', REVIEW = '1', PRICE = 4.0, PLACE = '武汉', SPAN = '1111', STATUS = '0', USERNAME = '藤原豆腐店' WHERE ID = 29;
+2020-04-09 14:08:43 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 14:08:43 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 14:08:43 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 14:08:43 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:08:45 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 14:08:45 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:08:45 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 14:08:45 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 14:08:45 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 14:08:45 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:08:48 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:08:48 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原拓海啊';
+2020-04-09 14:08:58 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:08:58 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原拓海啊';
+2020-04-09 14:09:09 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:09:09 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:09:09 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:09:09 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 14:09:09 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:09:09 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:09:29 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:09:29 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:09:29 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:09:29 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 14:09:29 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:09:29 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:09:42 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 14:09:42 | 耗时 2 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:09:42 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 14:09:42 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 14:09:42 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 14:09:42 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:09:53 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:09:53 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:09:53 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:09:53 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (USERNAME LIKE '%舒%' AND OWNER = 1);
+2020-04-09 14:09:53 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:09:53 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (USERNAME LIKE '%舒%' AND OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:09:57 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:09:57 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:09:57 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:09:57 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 14:09:57 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:09:57 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:09:59 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 14:09:59 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 14:09:59 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 14:09:59 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:10:05 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 14:10:05 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 14:10:09 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 14:10:09 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '我的私人车位' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:10:09 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 14:10:09 | 耗时 2 ms | SQL 语句：
+UPDATE t_park SET OWNER = 10, MOBILE = '15623041759', AVAILABLE = '1', WHY = '', DESCRIPTION = '测试数据', MODIFYTIME = '2020-04-09T14:10:09.803+0800', PRICE = 4.0, PLACE = '秋名山', SPAN = '8686', USERNAME = '我的私人车位' WHERE ID = 31;
+2020-04-09 14:10:09 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:10:09 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 14:10:09 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:10:09 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:10:13 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 14:10:13 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:10:13 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 14:10:13 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 14:10:13 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 14:10:13 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:10:25 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:10:25 | 耗时 0 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 14:10:25 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:10:25 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:10:26 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 14:10:26 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 14:10:32 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 14:10:32 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 14:10:38 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 14:10:38 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 14:10:38 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 14:10:38 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:10:40 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 14:10:40 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 14:10:44 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:10:44 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '我的私人车位';
+2020-04-09 14:10:48 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 14:10:48 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:10:48 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 14:10:48 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 14:10:48 INFO  http-nio-8080-exec-4 p6spy 2020-04-09 14:10:48 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:10:51 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:10:51 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原豆腐店';
+2020-04-09 14:10:56 INFO  http-nio-8080-exec-5 p6spy 2020-04-09 14:10:56 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = '藤原豆腐店' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:10:56 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 14:10:56 | 耗时 1 ms | SQL 语句：
+UPDATE t_park SET OWNER = 1, MOBILE = '15623041759', WHY = '可以', DESCRIPTION = '111111啊111', MODIFYTIME = '2020-04-09T14:10:56.200+0800', PRICE = 4.0, PLACE = '武汉', SPAN = '1111', USERNAME = '藤原豆腐店' WHERE ID = 29;
+2020-04-09 14:10:56 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 14:10:56 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:10:56 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 14:10:56 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (OWNER = 1);
+2020-04-09 14:10:56 INFO  http-nio-8080-exec-1 p6spy 2020-04-09 14:10:56 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (OWNER = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:10:58 INFO  http-nio-8080-exec-10 p6spy 2020-04-09 14:10:58 | 耗时 1 ms | SQL 语句：
+SELECT * FROM t_park WHERE USERNAME = '藤原豆腐店';
+2020-04-09 14:11:00 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 14:11:00 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:11:00 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 14:11:00 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 14:11:00 INFO  http-nio-8080-exec-8 p6spy 2020-04-09 14:11:00 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:11:04 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:11:04 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:11:04 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:11:04 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 14:11:04 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:11:04 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:11:04 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:11:04 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:11:04 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:11:04 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_order WHERE (USER_ID = 1);
+2020-04-09 14:11:04 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:11:04 | 耗时 1 ms | SQL 语句：
+SELECT MODIFYTIME, CREATETIME, PRICE, MOBILE, PLACE, USER_ID, PARK_ID, USERNAME FROM t_order WHERE (USER_ID = 1) ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:11:08 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:11:08 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (REVIEW = '1');
+2020-04-09 14:11:08 INFO  http-nio-8080-exec-3 p6spy 2020-04-09 14:11:08 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (REVIEW = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:11:10 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 14:11:10 | 耗时 1 ms | SQL 语句：
+SELECT COUNT(1) FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1');
+2020-04-09 14:11:10 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 14:11:10 | 耗时 1 ms | SQL 语句：
+SELECT ID, OWNER, MOBILE, AVAILABLE, WHY, DESCRIPTION, MODIFYTIME, CREATETIME, REVIEW, PRICE, PLACE, SPAN, STATUS, USERNAME FROM t_park WHERE (STATUS = '1' AND AVAILABLE = '1') ORDER BY createTime DESC LIMIT 0,10;
+2020-04-09 14:12:50 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 14:12:50 | 耗时 1 ms | SQL 语句：
+SELECT r.* FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc';
+2020-04-09 14:12:50 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 14:12:50 | 耗时 2 ms | SQL 语句：
+SELECT m.perms FROM t_role r LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) LEFT JOIN t_role_menu rm ON (rm.role_id = r.role_id) LEFT JOIN t_menu m ON (m.menu_id = rm.menu_id) WHERE u.username = 'ccc' AND m.perms IS NOT NULL AND m.perms <> '';
+2020-04-09 14:12:50 INFO  http-nio-8080-exec-7 p6spy 2020-04-09 14:12:50 | 耗时 1 ms | SQL 语句：
+SELECT u.user_id userId, u.username, u.email, u.mobile, u.password, u.status, u.create_time createTime, u.ssex sex, u.dept_id deptId, u.last_login_time lastLoginTime, u.modify_time modifyTime, u.avatar, u.description, d.dept_name deptName, GROUP_CONCAT(r.role_id) roleId, GROUP_CONCAT(r.ROLE_NAME) roleName FROM t_user u LEFT JOIN t_dept d ON (u.dept_id = d.dept_id) LEFT JOIN t_user_role ur ON (u.user_id = ur.user_id) LEFT JOIN t_role r ON r.role_id = ur.role_id WHERE u.username = 'ccc' GROUP BY u.username, u.user_id, u.email, u.mobile, u.password, u.status, u.create_time, u.ssex, u.dept_id, u.last_login_time, u.modify_time, u.description, u.avatar, u.theme, u.is_tab;
+2020-04-09 14:12:51 INFO  http-nio-8080-exec-6 p6spy 2020-04-09 14:12:51 | 耗时 4 ms | SQL 语句：
+SELECT m.* FROM t_menu m WHERE m.type <> 1 AND m.MENU_ID IN (SELECT DISTINCT rm.menu_id FROM t_role_menu rm LEFT JOIN t_role r ON (rm.role_id = r.role_id) LEFT JOIN t_user_role ur ON (ur.role_id = r.role_id) LEFT JOIN t_user u ON (u.user_id = ur.user_id) WHERE u.username = 'ccc') ORDER BY m.order_num;
+2020-04-09 14:15:47 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:15:47 | 耗时 5 ms | SQL 语句：
+SELECT COUNT(1) FROM t_login_log;
+2020-04-09 14:15:47 INFO  http-nio-8080-exec-9 p6spy 2020-04-09 14:15:47 | 耗时 1 ms | SQL 语句：
+SELECT ID, `SYSTEM`, LOGIN_TIME, BROWSER, IP, LOCATION, USERNAME FROM t_login_log ORDER BY login_time DESC LIMIT 0,10;
+2020-04-09 14:15:48 INFO  http-nio-8080-exec-2 p6spy 2020-04-09 14:15:48 | 耗时 15 ms | SQL 语句：
+SELECT COUNT(1) FROM t_log;
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler Eirc_Scheduler_$_DESKTOP-C7SKRPK1586412428595 paused.
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook org.springframework.scheduling.quartz.SchedulerFactoryBean Shutting down Quartz Scheduler
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler Eirc_Scheduler_$_DESKTOP-C7SKRPK1586412428595 shutting down.
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler Eirc_Scheduler_$_DESKTOP-C7SKRPK1586412428595 paused.
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook org.quartz.core.QuartzScheduler Scheduler Eirc_Scheduler_$_DESKTOP-C7SKRPK1586412428595 shutdown complete.
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource start closing ....
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown initiated...
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource quartz - Shutdown completed.
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown initiated...
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook com.zaxxer.hikari.HikariDataSource base - Shutdown completed.
+2020-04-09 14:17:25 INFO  SpringContextShutdownHook com.baomidou.dynamic.datasource.DynamicRoutingDataSource dynamic-datasource all closed success,bye

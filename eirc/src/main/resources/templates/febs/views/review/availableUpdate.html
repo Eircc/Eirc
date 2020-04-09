@@ -1,0 +1,125 @@
+<style>
+    #available-update {
+        padding: 20px 25px 25px 0;
+    }
+
+    #available-update .layui-treeSelect .ztree li a, .ztree li span {
+        margin: 0 0 2px 3px !important;
+    }
+</style>
+<div class="layui-fluid" id="available-update">
+    <form class="layui-form" action="" lay-filter="available-form">
+        <div class="layui-form-item febs-hide">
+            <label class="layui-form-label febs-form-item-require">用户id：</label>
+            <div class="layui-input-block">
+                <input type="text" name="id" data-th-value="${park.id}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label febs-form-item-require">用户名：</label>
+            <div class="layui-input-block">
+                <input type="text" name="username" minlength="3" maxlength="10" data-th-id="${park.id}"
+                       lay-verify="range|username" autocomplete="off" class="layui-input" readonly>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">手机：</label>
+            <div class="layui-input-block">
+                <input type="tel" name="mobile" lay-verify="phone" autocomplete="off" class="layui-input" readonly>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">地址：</label>
+            <div class="layui-input-block">
+                <input type="text" name="place"  autocomplete="off" class="layui-input" readonly>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">车牌：</label>
+            <div class="layui-input-block">
+                <input type="text" name="span"  autocomplete="off" class="layui-input" readonly>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">计费：</label>
+            <div class="layui-input-block">
+                <input type="text" name="price"  autocomplete="off" class="layui-input" readonly>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label febs-form-item-require">审核状态：</label>
+            <div class="layui-input-block">
+                <input type="radio" name="available" value="1" title="通过" >
+                <input type="radio" name="available" value="0" title="未通过" checked="">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">描述：</label>
+            <div class="layui-input-block">
+                <textarea name="description" maxlength="100" class="layui-textarea" readonly>
+                </textarea>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">不通过原因：</label>
+            <div class="layui-input-block">
+                <textarea name="why" maxlength="100" placeholder="不通过的原因！审核通过可不填写！" class="layui-textarea">
+                </textarea>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label febs-hide">车主：</label>
+            <div class="layui-input-block">
+                <textarea name="owner" class="layui-textarea" readonly>
+                </textarea>
+            </div>
+        </div>
+
+        <div class="layui-form-item febs-hide">
+            <button class="layui-btn" lay-submit="" lay-filter="form-submit" id="submit"></button>
+        </div>
+    </form>
+</div>
+
+<script data-th-inline="javascript">
+    layui.use(['febs', 'form', 'validate'], function () {
+        var $ = layui.$,
+            febs = layui.febs,
+            layer = layui.layer,
+            form = layui.form,
+            park = [[${park}]],
+            validate = layui.validate;
+
+        form.verify(validate);
+        form.render();
+
+        initParkInfoValue();
+
+        function initParkInfoValue(){
+            form.val("available-form",{
+                "username": park.username,
+                "mobile": park.mobile,
+                "place": park.place,
+                "price": park.price,
+                "span": park.span,
+                "status": park.status,
+                "why" : park.why,
+                "description": park.description,
+                "owner": park.owner
+            });
+        }
+
+        form.on('submit(form-submit)', function (data) {
+            if (febs.nativeEqual(data.field, park)) {
+                febs.alert.warn('信息未作任何修改！');
+                return false;
+            }
+            febs.post(ctx + 'park/review', data.field, function () {
+                layer.closeAll();
+                febs.alert.success(park.username + ' 车位信息审核操作成功！');
+                $('#febs-available').find('#query').click();
+            });
+            return false;
+        });
+    });
+</script>

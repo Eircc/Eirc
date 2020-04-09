@@ -1,0 +1,120 @@
+<style>
+    #my-update {
+        padding: 20px 25px 25px 0;
+    }
+
+    #my-update .layui-treeSelect .ztree li a, .ztree li span {
+        margin: 0 0 2px 3px !important;
+    }
+</style>
+<div class="layui-fluid" id="my-update">
+    <form class="layui-form" action="" lay-filter="park-user-update-form">
+        <div class="layui-form-item febs-hide">
+            <label class="layui-form-label febs-form-item-require">用户id：</label>
+            <div class="layui-input-block">
+                <input type="text" name="id" data-th-value="${park.id}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label febs-form-item-require">用户名：</label>
+            <div class="layui-input-block">
+                <input type="text" name="username" minlength="3" maxlength="10" data-th-id="${park.id}"
+                       lay-verify="range|username" autocomplete="off" class="layui-input" >
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">手机：</label>
+            <div class="layui-input-block">
+                <input type="tel" name="mobile" lay-verify="phone" autocomplete="off" class="layui-input" >
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">地址：</label>
+            <div class="layui-input-block">
+                <input type="text" name="place"  autocomplete="off" class="layui-input" >
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">车牌：</label>
+            <div class="layui-input-block">
+                <input type="text" name="span"  autocomplete="off" class="layui-input" >
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">计费：</label>
+            <div class="layui-input-block">
+                <input type="text" name="price"  autocomplete="off" class="layui-input" >
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">描述：</label>
+            <div class="layui-input-block">
+                <textarea name="description" maxlength="100" class="layui-textarea" >
+                </textarea>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">审核信息：</label>
+            <div class="layui-input-block">
+                <textarea name="why" maxlength="100" class="layui-textarea" readonly>
+                </textarea>
+            </div>
+        </div>
+        <div class="layui-form-item febs-hide">
+            <label class="layui-form-label">车主id：</label>
+            <div class="layui-input-block">
+                <input type="text" name="owner"  autocomplete="off" class="layui-input" >
+            </div>
+        </div>
+        <div class="layui-form-item febs-hide">
+            <button class="layui-btn" lay-submit="" lay-filter="my-update-form-submit" id="submit"></button>
+        </div>
+    </form>
+</div>
+
+<script data-th-inline="javascript">
+    layui.use(['febs', 'form', 'validate'], function () {
+        var $ = layui.$,
+            febs = layui.febs,
+            layer = layui.layer,
+            form = layui.form,
+            park = [[${park}]],
+            validate = layui.validate;
+
+        form.verify(validate);
+        form.render();
+
+        initParkReviewValue();
+
+        function initParkReviewValue() {
+            form.val("park-user-update-form",{
+                "username": park.username,
+                "mobile" : park.mobile,
+                "price" : park.price,
+                "place" : park.place,
+                "span" : park.span,
+                "description" : park.description,
+                "why" : park.why,
+                "owner" : park.owner
+            });
+        }
+
+        form.on('submit(my-update-form-submit)', function (data) {
+            if (febs.nativeEqual(data.field, park)) {
+                febs.alert.warn('数据未作任何修改！');
+                return false;
+            }
+            febs.post(ctx + 'park/userUpdate', data.field, function () {
+                layer.closeAll();
+                febs.alert.success(park.username + ' 您的信息修改成功！');
+                $('#febs-my').find('#query').click();
+            });
+            return false;
+        });
+    });
+</script>
+
+
+
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ccc.eirc.park.mapper.ParkMapper">
+
+    <select id="findByName" parameterType="park" resultType="park" >
+        select * from t_park where USERNAME = #{username}
+    </select>
+
+
+
+
+
+
+
+</mapper>
