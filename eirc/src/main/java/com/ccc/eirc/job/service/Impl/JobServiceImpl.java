@@ -39,15 +39,15 @@ import java.util.List;
 public class JobServiceImpl extends ServiceImpl<JobMapper, Job> implements JobService {
 
 
-/*
+
     @Autowired
     private Scheduler scheduler;
 
 
-    */
-/**
+
+    /**
      * 项目启动时,初始化定时器
-     *//*
+     */
 
     @PostConstruct
     public void init() {
@@ -62,7 +62,7 @@ public class JobServiceImpl extends ServiceImpl<JobMapper, Job> implements JobSe
             }
         });
     }
-*/
+
 
 
     @Override
@@ -123,7 +123,7 @@ public class JobServiceImpl extends ServiceImpl<JobMapper, Job> implements JobSe
         return this.getById(jobId);
     }
 
-/*    @Override
+    @Override
     @Transactional
     public void run(String jobIds) {
         String[] list = jobIds.split(StringPool.COMMA);
@@ -153,5 +153,5 @@ public class JobServiceImpl extends ServiceImpl<JobMapper, Job> implements JobSe
         Job job = new Job();
         job.setStatus(status);
         return this.baseMapper.update(job, new LambdaQueryWrapper<Job>().in(Job::getJobId, list));
-    }*/
+    }
 }

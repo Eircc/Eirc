@@ -13,18 +13,18 @@ spring:
       # 配置默认数据源
       primary: base
       datasource:
-        # 数据源-1
+        # 数据源-1，名称为 base  192.168.80.129
         base:
-          username: username
-          password: password
+          username: root
+          password: 123456
           driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://localhost:3306/my_base?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
-        # 数据源-2
+          url: jdbc:mysql://192.168.80.129:3306/my_base?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
+        # 数据源-2，名称为 quartz
         quartz:
-          username: username
-          password: password
+          username: root
+          password: 123456
           driver-class-name: com.mysql.cj.jdbc.Driver
-          url: jdbc:mysql://localhost:3306/my_quartz?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
+          url: jdbc:mysql://192.168.80.129:3306/my_quartz?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
 
 
 
@@ -33,11 +33,11 @@ spring:
     # Redis数据库索引（默认为 0）
     database: 0
     # Redis服务器地址
-    host: your Redis port
+    host: 192.168.80.129
     # Redis服务器连接端口
     port: 6379
     # Redis 密码
-    password: your Redis password
+    password: ccc
     lettuce:
       pool:
         # 连接池中的最小空闲连接

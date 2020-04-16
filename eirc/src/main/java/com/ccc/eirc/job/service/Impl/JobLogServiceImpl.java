@@ -10,6 +10,7 @@ import com.ccc.eirc.commons.utils.SortUtil;
 import com.ccc.eirc.job.domain.JobLog;
 import com.ccc.eirc.job.mapper.JobLogMapper;
 import com.ccc.eirc.job.service.JobLogService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -27,14 +28,10 @@ import java.util.List;
  * @Date 2020/4/1 13:29
  * @Version 1.0.0
  */
-@Service
+@Slf4j
+@Service("JobLogService")
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
 public class JobLogServiceImpl extends ServiceImpl<JobLogMapper, JobLog> implements JobLogService {
-
-
-
-
-
 
     @Override
     @Transactional

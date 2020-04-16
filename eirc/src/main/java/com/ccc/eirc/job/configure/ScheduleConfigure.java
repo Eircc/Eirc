@@ -52,7 +52,7 @@ public class ScheduleConfigure {
         prop.put("org.quartz.jobStore.tablePrefix", "QRTZ_");
         factory.setQuartzProperties(prop);
 
-        factory.setSchedulerName("Eirc_Scheduler");
+        factory.setSchedulerName("EIRC_Scheduler");
         // 延时启动
         factory.setStartupDelay(1);
         factory.setApplicationContextSchedulerContextKey("applicationContextKey");

@@ -2,6 +2,7 @@ package com.ccc.eirc.system.controller;
 
 import com.ccc.eirc.commons.annotation.Limit;
 import com.ccc.eirc.commons.controller.BaseController;
+import com.ccc.eirc.commons.domain.EircConstant;
 import com.ccc.eirc.commons.domain.EircResopnse;
 import com.ccc.eirc.commons.exception.EircException;
 import com.ccc.eirc.commons.service.ValidateCodeService;
@@ -112,7 +113,7 @@ public class LoginController extends BaseController {
     public EircResopnse index(@NotBlank(message = "{required}") @PathVariable String username) {
 //        跟新登陆时间
         this.userService.updateLoginTime(username);
-        HashMap<String, Object> data = new HashMap<>();
+        HashMap<String, Object> data = new HashMap<>(EircConstant.DATA_MAP_INITIAL_CAPACITY);
 
 //        获取系统访问记录
         Long totalVisitCount = this.loginLogService.findTotalVisitCount();

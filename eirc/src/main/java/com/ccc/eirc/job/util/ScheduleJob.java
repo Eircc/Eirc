@@ -19,6 +19,8 @@ import java.util.concurrent.Future;
  * <a>Title:ScheduleJob</a>
  * <a>Author：<a>
  * <a>Description：<a>
+ * <p>
+ * 执行定时任务
  *
  * @Author ccc
  * @Date 2020/4/1 13:02
@@ -68,7 +70,5 @@ public class ScheduleJob extends QuartzJobBean {
         } finally {
             scheduleJobLogService.saveJob(jobLog);
         }
-
-
     }
 }

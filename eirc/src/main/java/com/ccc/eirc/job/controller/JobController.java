@@ -95,7 +95,7 @@ public class JobController extends BaseController {
         ExcelKit.$Export(Job.class, response).downXlsx(jobs, false);
     }
 
-/*    @GetMapping("run/{jobIds}")
+    @GetMapping("run/{jobIds}")
     @RequiresPermissions("job:run")
     @ControllerEndpoint(operation = "执行定时任务", exceptionMessage = "执行定时任务失败")
     public EircResopnse runJob(@NotBlank(message = "{required}") @PathVariable String jobIds) {
@@ -117,6 +117,6 @@ public class JobController extends BaseController {
     public EircResopnse resumeJob(@NotBlank(message = "{required}") @PathVariable String jobIds) {
         this.jobService.resume(jobIds);
         return new EircResopnse().success();
-    }*/
+    }
 
 }

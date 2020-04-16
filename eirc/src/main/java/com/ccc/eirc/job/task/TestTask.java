@@ -16,9 +16,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class TestTask {
 
+    /**
+     * test 为带参方法
+     *
+     * @param params
+     */
     public void test(String params) {
-        log.info("我是带参数的test方法，正在被执行，参数为：{}" , params);
+        log.info("我是带参数的test方法，正在被执行，参数为：{}", params);
     }
+
+    /**
+     * test1 为不带参方法
+     */
     public void test1() {
         log.info("我是不带参数的test1方法，正在被执行");
     }

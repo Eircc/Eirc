@@ -53,26 +53,31 @@ public interface JobService extends IService<Job> {
      */
     Job findJob(Long jobId);
 
-/*    *//**
+    /**
      * 执行定时任务
-     *
      * @param jobIds
-     *//*
+     */
+
     void run(String jobIds);
 
-    *//**
+    /**
      * 暂停定时任务
-     *
      * @param jobIds
-     *//*
+     */
+
     void pause(String jobIds);
 
-    *//**
+    /**
      * 恢复定时任务
-     *
      * @param jobIds
-     *//*
+     */
     void resume(String jobIds);
 
-    int updateBatch(String jobIds, String status);*/
+    /**
+     * 状态修改
+     * @param jobIds
+     * @param status
+     * @return
+     */
+    int updateBatch(String jobIds, String status);
 }
